@@ -36,7 +36,7 @@ const Home = () => {
     <main className="relative  max-w-6xl h-screen mx-auto flex flex-col items-center justify-center">
       <div className=" w-full flex flex-col items-center justify-center gap-7 p-6 sm:p-16">
         <div className="text-black text-4xl md:text-6xl lg:text-8xl font-semibold" >
-          Cool List
+          Apemillio
         </div>
 
         <label htmlFor="wallet-input" className="text-black text-opacity-50  text-lg sm:text-xl md:text-3xl">Check your WL eligibility</label>
@@ -60,7 +60,7 @@ const Home = () => {
             getEligibility(wallet).then((res) => {
               setIsVerifying(false);
               if (res) {
-                toast('Wallet Whitelisted!', { type: "success", className: 'toast-message', progressClassName:'toast-progress' })
+                toast('Congrats You get Discount And $Apemillio!', { type: "success", className: 'toast-message', progressClassName:'toast-progress' })
               } else {
                 toast('Wallet not Found!', { type: "error", className: 'toast-message', progressClassName:'toast-progress' })
               }
@@ -78,21 +78,21 @@ const Home = () => {
       style={{
         opacity:isVerifying?('0.37'):('1')
       }}
-      alt="coolbuddy" width={350} height={350} src={'/Cool Buddy.webp'}></Image>
+      alt="coolbuddy" width={350} height={350} src={'/photo-output.png'}></Image>
 
 
       <div className="transition-opacity duration-300 max-sm:w-fit max-sm:left-[50%] max-sm:translate-x-[-50%] w-full fixed z-10 bottom-12 left-[10vw] flex items-center justify-start gap-4">
 
-        <Link className=" max-sm:hidden" href={'http://www.wabalabaland.com/'} target="_blank">
+        <Link className=" max-sm:hidden" href={'http://www.apemillio.xyz/'} target="_blank">
           <Image className="aspect-auto w-[40px] h-[40px]  sm:ml-4 rounded-full transition-all hover:scale-[1.08] active:scale-100"
             alt="logo"
-            src={'/logo.webp'}
+            src={'/photo-output.png'}
             width={60}
             height={60}
           ></Image>
         </Link>
 
-        <Link className=" max-sm:hidden" href={'https://twitter.com/wabalabaland'} target="_blank">
+        <Link className=" max-sm:hidden" href={'https://twitter.com/apemillio'} target="_blank">
           <Image className="aspect-auto w-[40px] h-[40px]  sm:ml-4 transition-all hover:scale-[1.08] active:scale-100"
             alt="logo"
             src={'/twitter.png'}
@@ -101,7 +101,7 @@ const Home = () => {
           ></Image>
         </Link>
 
-        <Link className=" max-sm:hidden" href={'https://discord.gg/QUDJ9MGEkn'} target="_blank">
+        <Link className=" max-sm:hidden" href={'https://discord.gg/soon'} target="_blank">
           <Image className="aspect-auto w-[40px] h-[40px]  sm:ml-4 transition-all hover:scale-[1.08] active:scale-100"
             alt="logo"
             src={'/discord.png'}
