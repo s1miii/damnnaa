@@ -10,32 +10,32 @@ const baseUrl = process.env.NODE_ENV === 'development'
 
 export const metadata: Metadata = {
   title: 'Wallet Checker',
-  description: 'Cool Buddies Wallet Checker',
+  description: 'Apemillio Wallet Checker',
   viewport: { width: "device-width", initialScale: 1 },
   metadataBase: new URL(baseUrl),
-  keywords: "NFT, SOL, Cool Buddies, art, mint, free, demarco",
-  creator: 'iSy',
-  publisher: 'iSy',
+  keywords: "NFT, Apechain, Apemillio, art, mint, free ",
+  creator: 'ape',
+  publisher: 'ape',
   generator: 'Next.js',
-  applicationName: 'Cool Buddies',
+  applicationName: 'Apemillio',
   authors: [
     {
-      name: 'iSy',
-      url: 'https://linktr.ee/isyqozz512'
+      name: 'ape',
+      url: 'https://linktr.ee/'
     },
     {
-      name: 'Demarco',
-      url: 'https://twitter.com/itsnot_demarco'
+      name: 'ape',
+      url: 'https://twitter.com/apemillio'
     }
   ],
   openGraph: {
     title: 'Wallet Checker',
-    description: 'Cool Buddies Wallet Checker.',
-    siteName: 'Cool Buddies',
+    description: 'apemillio Wallet Checker.',
+    siteName: 'apemillio',
   },
   twitter: {
     title: 'Wallet Checker',
-    description: 'Cool Buddies Wallet Checker.',
+    description: 'apemillio Wallet Checker.',
     card: 'summary',
     creator: '@iSyqozz512',
   },
